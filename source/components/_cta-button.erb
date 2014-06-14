@@ -1,0 +1,16 @@
+<%
+  text = text || 'Get Started'
+  btn  = btn  || 'btn'
+  id   = id   || nil
+%>
+
+<a
+  href="<%= data.urls.start_project %>"
+  class="<%= btn %> typeform-share will-animate pulse"
+  id="<%= id %>"
+  data-mode="1"
+  data-faux-progress
+  data-wow-delay="0.5s"
+  target="_blank">
+  <%= text %>
+</a>

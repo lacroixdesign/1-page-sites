@@ -1,0 +1,20 @@
+.s-footer {
+  padding: $section-padding 0;
+  background: $dark-white;
+  font-family: $typeface-serif;
+  text-align: center;
+}
+
+.s-footer__logo {
+  width: 6em;
+  margin: 0 auto 1em;
+
+  img {
+    width: 100%;
+  }
+} // .s-footer__logo
+
+.s-footer__attribution {
+  font-size: 0.625em;
+  font-style: italic;
+}

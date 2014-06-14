@@ -1,0 +1,29 @@
+<section id="welcome" class="s-welcome" data-resize="1100">
+  <div class="l-constrained">
+
+    <header>
+      <div class="s-welcome__logo">
+        <%= svg_image_tag "logo", class: "image-fullwidth", alt: "1 Page Sites" %>
+      </div>
+      <ul class="s-welcome__social">
+        <li><%= link_to icon("e000"), "https://twitter.com/1pagesites", target: "_blank" %></li>
+        <li><%= link_to icon("e001"), "https://www.facebook.com/1PageSites", target: "_blank" %></li>
+        <li><%= link_to icon("e002"), "https://plus.google.com/b/100269766489074847704", rel: "publisher", target: "_blank" %></li>
+        <li><%= mail_to "hello@1pagesites.net", icon("e003") %></li>
+      </ul>
+    </header>
+
+    <div class="s-welcome__text">
+      <h1>Get Your Business Moving</h1>
+      <h4>With a brand new responsive website launched in 3 weeks for $3000.</h4>
+      <div class="s-welcome__actionables">
+        <%= component "cta-button", btn: "btn-primary", id: "get-started" %>
+        <a href="#about" id="learn-more" class="s-welcome__learn">
+          <span>or Learn More</span>
+          <span><%= icon "e005" %></span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>

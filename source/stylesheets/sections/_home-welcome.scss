@@ -1,0 +1,98 @@
+// Intro Section
+.s-welcome {
+  padding-bottom: 4em;
+  background: $black image-url("backgrounds/cycle-bg.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  color: $white;
+
+  header {
+    @include clearfix;
+  }
+} // .s-welcome
+
+.s-welcome__logo {
+  float: left;
+  width: 4em;
+  margin: 0.5em 0 2em 0;
+
+  img {
+    width: 100%;
+  }
+
+  @include media-ie($breakpoint-ipad) {
+    width: 8em;
+    margin-bottom: 12em;
+  }
+} // .s-welcome__logo
+
+.s-welcome__social {
+  float: right;
+  margin: 0.5em 0;
+  font-size: 1.25em;
+
+  li {
+    display: inline-block;
+    margin: 0 0 0 0.25em;
+    &:first-child { margin-left: 0; }
+  }
+
+  a:hover {
+    color: $orange;
+  }
+
+  a:active {
+    color: darken($orange, 10%)
+  }
+} // .s-welcome__social
+
+.s-welcome__text {
+  @include clearfix;
+
+  h1 {
+    margin-bottom: 0;
+    font-size: 3em;
+    font-weight: 900;
+
+    @include media-ie($breakpoint-ipad) {
+      font-size: 4em;
+    }
+  } // h1
+
+  h4 {
+    margin-bottom: 2em;
+    font-size: 1.25em;
+    font-weight: normal;
+  }
+} // .s-welcome__text
+
+.s-welcome__actionables {
+  float: left;
+  text-align: center;
+}
+
+.s-welcome__learn {
+  display: block;
+  margin-top: 1em;
+  font-size: 0.75em;
+  font-style: italic;
+  text-decoration: none;
+
+  span {
+    display: block;
+    margin-bottom: 0.25em;
+    font-family: $typeface-sans;
+  }
+
+  i {
+    font-size: 1.5em;
+  }
+
+  &:hover {
+    color: lighten($orange, 10);
+  }
+
+  &:active {
+    color: $orange;
+  }
+} // .s-welcome__learn

@@ -1,0 +1,11 @@
+.s-about {
+  padding: $section-padding 0;
+  background: $orange;
+  color: $white;
+}
+
+.s-about__overview {
+  @include media-ie($breakpoint-ipad) {
+    @include span-columns(6);
+  }
+} // .s-about__overview

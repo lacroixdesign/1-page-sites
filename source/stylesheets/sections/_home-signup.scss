@@ -1,0 +1,32 @@
+.s-signup {
+  padding: $section-padding 0;
+  background: $off-white;
+  color: $black;
+
+  form {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  p {
+    margin-bottom: 1.5em;
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    display: inline-block;
+    max-width: 20em;
+    margin: 0.25em 0.5em 0.25em 0;
+    border: 2px solid $medium-white;
+    background-color: $white;
+    font-size: 0.875em;
+  }
+
+  @include media-ie($breakpoint-desktop) {
+    form { width: 75%; }
+  }
+
+  @include media-ie($breakpoint-large-screen) {
+    form { width: 50%; }
+  }
+} // .s-signup
