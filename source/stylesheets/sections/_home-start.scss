@@ -8,36 +8,38 @@
 // Get Started steps
 .s-start__steps {
   @include row;
-  counter-reset: getting-started-steps;
-  list-style: none;
   padding: 0 0 1em;
   margin: 0 0 1.75em;
   border-bottom: 1px solid darken($green, 5);
+  list-style: none;
+  counter-reset: getting-started-steps;
 
   li {
     position: relative;
     min-height: 3em;
     padding-top: 0.5em;
-    padding-left: 2em;
+    padding-left: 2.5em;
     margin-bottom: 1em;
+    font-size: 1.25em;
+    line-height: 1.4;
 
     &:before {
-      content: counter(getting-started-steps);
-      counter-increment: getting-started-steps;
       position: absolute;
-      left: 0;
       top: 0;
+      left: 0;
       font-family: $typeface-serif;
       font-size: 2.75em;
       font-weight: 600;
+      content: counter(getting-started-steps);
+      counter-increment: getting-started-steps;
     }
 
-    @include media(min-width $breakpoint-ipad max-width ($breakpoint-desktop - 1)) {
+    @include media(min-width $breakpoint-ipad max-width 1099px) {
       @include span-columns(6);
       @include omega(2n);
     }
 
-    @include media($breakpoint-desktop) {
+    @include media(1100px) {
       @include span-columns(4);
       @include omega(3n);
     }
