@@ -12,8 +12,9 @@
   }
 
   ul {
-    list-style: none;
+    padding-left: 1em;
     margin-left: 0;
+    list-style: circle;
   }
 
   li {
@@ -24,10 +25,10 @@
 
   li:last-child {
     padding-bottom: 0;
-    border-bottom: none;
+    border-bottom: 0;
   }
 
-  @include media-ie($breakpoint-desktop) {
+  @include media-ie($breakpoint-ipad) {
     @include span-columns(6);
     margin-bottom: 0;
   }

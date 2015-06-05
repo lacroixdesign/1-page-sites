@@ -1,6 +1,6 @@
 // General Containers
 
-$containers-bp: $breakpoint-desktop;
+$containers-bp: $breakpoint-ipad;
 
 @mixin page-container($width1: none, $width2: none, $bp: $containers-bp) {
   @include row;
